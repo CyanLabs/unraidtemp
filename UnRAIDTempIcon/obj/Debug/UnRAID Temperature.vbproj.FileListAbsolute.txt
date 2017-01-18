@@ -1,0 +1,12 @@
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\bin\Debug\UnRAID Temperature.exe.config
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\bin\Debug\UnRAID Temperature.exe
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\bin\Debug\UnRAID Temperature.pdb
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\bin\Debug\UnRAID Temperature.xml
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\bin\Debug\Renci.SshNet.dll
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\bin\Debug\Renci.SshNet.xml
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\obj\Debug\UnRAIDTempIcon.Form1.resources
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\obj\Debug\UnRAIDTempIcon.Resources.resources
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\obj\Debug\UnRAID Temperature.vbproj.GenerateResource.Cache
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\obj\Debug\UnRAID Temperature.exe
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\obj\Debug\UnRAID Temperature.xml
+C:\Users\fma96\Documents\Visual Studio 2015\Projects\UnRAIDTempIcon\UnRAIDTempIcon\obj\Debug\UnRAID Temperature.pdb
