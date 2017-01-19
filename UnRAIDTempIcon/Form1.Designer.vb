@@ -44,6 +44,7 @@ Partial Class Form1
         Me.chkMB = New System.Windows.Forms.CheckBox()
         Me.chkCPU = New System.Windows.Forms.CheckBox()
         Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.btnApply = New System.Windows.Forms.Button()
         Me.IconMenu.SuspendLayout()
         Me.grpCredentials.SuspendLayout()
         Me.grpSettings.SuspendLayout()
@@ -84,7 +85,7 @@ Partial Class Form1
         Me.lblAbout.AutoSize = True
         Me.lblAbout.BackColor = System.Drawing.Color.Transparent
         Me.lblAbout.LinkArea = New System.Windows.Forms.LinkArea(100, 19)
-        Me.lblAbout.Location = New System.Drawing.Point(2, 266)
+        Me.lblAbout.Location = New System.Drawing.Point(2, 302)
         Me.lblAbout.Name = "lblAbout"
         Me.lblAbout.Size = New System.Drawing.Size(210, 42)
         Me.lblAbout.TabIndex = 0
@@ -178,7 +179,7 @@ Partial Class Form1
         Me.grpSettings.Controls.Add(Me.btnColors)
         Me.grpSettings.Controls.Add(Me.chkMB)
         Me.grpSettings.Controls.Add(Me.chkCPU)
-        Me.grpSettings.Location = New System.Drawing.Point(13, 124)
+        Me.grpSettings.Location = New System.Drawing.Point(13, 123)
         Me.grpSettings.Name = "grpSettings"
         Me.grpSettings.Size = New System.Drawing.Size(184, 129)
         Me.grpSettings.TabIndex = 2
@@ -256,11 +257,21 @@ Partial Class Form1
         '
         Me.RefreshTimer.Interval = Global.UnRAIDTempIcon.My.MySettings.Default.Interval
         '
+        'btnApply
+        '
+        Me.btnApply.Location = New System.Drawing.Point(13, 258)
+        Me.btnApply.Name = "btnApply"
+        Me.btnApply.Size = New System.Drawing.Size(184, 32)
+        Me.btnApply.TabIndex = 3
+        Me.btnApply.Text = "Save and apply settings!"
+        Me.btnApply.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(214, 311)
+        Me.ClientSize = New System.Drawing.Size(214, 347)
+        Me.Controls.Add(Me.btnApply)
         Me.Controls.Add(Me.grpSettings)
         Me.Controls.Add(Me.grpCredentials)
         Me.Controls.Add(Me.lblAbout)
@@ -306,4 +317,5 @@ Partial Class Form1
     Friend WithEvents updownInterval As NumericUpDown
     Friend WithEvents lblInterval As Label
     Friend WithEvents chkStartup As CheckBox
+    Friend WithEvents btnApply As Button
 End Class
