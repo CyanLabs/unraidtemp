@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.CPUTemp = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.IconMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -54,7 +55,9 @@ Partial Class Form1
         'CPUTemp
         '
         Me.CPUTemp.ContextMenuStrip = Me.IconMenu
+        Me.CPUTemp.Icon = CType(resources.GetObject("CPUTemp.Icon"), System.Drawing.Icon)
         Me.CPUTemp.Text = "CPUTemp"
+        Me.CPUTemp.Visible = True
         '
         'IconMenu
         '
@@ -77,7 +80,9 @@ Partial Class Form1
         'MBTemp
         '
         Me.MBTemp.ContextMenuStrip = Me.IconMenu
+        Me.MBTemp.Icon = CType(resources.GetObject("MBTemp.Icon"), System.Drawing.Icon)
         Me.MBTemp.Text = "MBTemp"
+        Me.MBTemp.Visible = True
         '
         'lblAbout
         '

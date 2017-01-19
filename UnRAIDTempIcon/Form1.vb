@@ -54,9 +54,11 @@ Public Class Form1
 
     End Sub
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
-        closeapp = True
-        sshclient.Disconnect()
         Application.Exit()
+    End Sub
+
+    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        sshClient.Disconnect()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnApply.Click
@@ -65,6 +67,8 @@ Public Class Form1
         If Not IPAddress.TryParse(My.Settings.IP, Nothing) Then MsgBox("Invalid IP Address", MessageBoxButtons.OK & MessageBoxIcon.Error, "Invalid IP")
         If IPAddress.TryParse(My.Settings.IP, Nothing) AndAlso chkCPU.Checked = True Or chkMB.Checked = True Then
             My.Settings.Save()
+            Me.Opacity = 0
+            Me.ShowInTaskbar = False
             Form1_Load(sender, e)
         End If
     End Sub
