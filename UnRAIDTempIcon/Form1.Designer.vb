@@ -113,7 +113,7 @@ Partial Class Form1
         Me.grpCredentials.Size = New System.Drawing.Size(184, 105)
         Me.grpCredentials.TabIndex = 1
         Me.grpCredentials.TabStop = False
-        Me.grpCredentials.Text = "Credentials"
+        Me.grpCredentials.Text = "SSH Credentials"
         '
         'txtPassword
         '
