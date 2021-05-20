@@ -16,7 +16,6 @@ namespace UnraidTemp
         }
 
         private string cpu, mb;
-        private bool closeapp;
         private string[] result;
         private SshClient sshClient;
         IPAddress ip;
@@ -158,7 +157,7 @@ namespace UnraidTemp
                     this.Opacity = 1;
                     this.ShowInTaskbar = true;
                 }
-                catch (Renci.SshNet.Common.SshAuthenticationException ex)
+                catch (Renci.SshNet.Common.SshAuthenticationException)
                 {
                     MessageBox.Show("Please make sure that the username and password match your UnRAID server", "Invalid Credentials", MessageBoxButtons.OK,MessageBoxIcon.Error);
                     MessageBox.Show(Properties.Settings.Default.IP + Properties.Settings.Default.Username + Properties.Settings.Default.Password);
