@@ -83,6 +83,7 @@ namespace UnraidTemp
             Properties.Settings.Default.ShowCPU = chkCPU.Checked;
             Properties.Settings.Default.ShowMB = chkMB.Checked;
             Properties.Settings.Default.StartWithWindows = chkStartup.Checked;
+            RefreshTimer.Interval = Properties.Settings.Default.Interval;
             // 'confirm info is valid
             if (!chkCPU.Checked && !chkMB.Checked)
                 MessageBox.Show("Atleast one temperature must be selected", "No Icon Selected", MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -106,7 +107,7 @@ namespace UnraidTemp
             }
             else
             {
-                Registry.CurrentUser.DeleteValue(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run\" + Application.ProductName, false);
+                Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run",true)?.DeleteValue(Application.ProductName);
             }
         }
 
